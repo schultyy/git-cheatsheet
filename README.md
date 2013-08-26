@@ -8,38 +8,37 @@
   
 `stdlayout` specifies, that `trunk`, `tags` and `branches` are being cloned. 
 
-** Note that this operation takes some time (hours) **
+**Note that this operation takes some time (hours)**
 
 ### Get new branches from svn
 
-  git svn fetch
+    git svn fetch
   
 ### Get latest changes from svn
 
-  git svn rebase
+    git svn rebase
   
 ### Commit to svn
 
-  git svn dcommit
+    git svn dcommit
 
 ## git
 
 ### Restore to a previous point
 
-  git reflog
-  
-  git reset --hard <hash>
-
+    git reflog
+    git reset --hard <hash>
+    
 ### Create patch
 
-  git format-patch master --stdout > my-patch.patch
+    git format-patch master --stdout > my-patch.patch
   
 ### Change commit message after commit
 
-  git commit --amend -m "new message"
+    git commit --amend -m "new message"
 
 ### Stash specific files
 
-  git add <file>
-  git stash
+    git add <file>
+    git stash
 
